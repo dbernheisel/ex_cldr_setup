@@ -22,8 +22,9 @@ defmodule ExCldrSetup.MixProject do
       {:jason, ">= 1.0.0"},
       {:ex_cldr, github: "elixir-cldr/cldr", override: true},
       {:ex_cldr_calendars, github: "elixir-cldr/cldr_calendars", override: true},
+      {:ex_cldr_dates_times, github: "elixir-cldr/cldr_dates_times", override: true},
       {:ex_cldr_calendars_format, github: "elixir-cldr/cldr_calendars_format", override: true},
-      {:cldr_utils, github: "elixir-cldr/cldr_utils", override: true},
+      {:cldr_utils, github: "elixir-cldr/cldr_utils", override: true}
     ]
   end
 end
