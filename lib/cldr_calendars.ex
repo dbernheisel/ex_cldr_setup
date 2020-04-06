@@ -1,4 +1,4 @@
-defmodule ExCldrSetup.Calendars do
+defmodule ExCldrSetup.Calendar.US do
   @moduledoc """
   This is the same as a regular Calendar, but with Sunday starting the week.
   """

@@ -3,16 +3,16 @@ defmodule ExCldrSetupTest do
   doctest ExCldrSetup
 
   test "localizes the calendar" do
-    {:ok, date} = ~D[2020-04-04 ExCldrSetupText.Calendar.US]
+    date = ~D[2020-04-04 ExCldrSetup.Calendar.US]
 
     assert Cldr.Calendar.localize(date, :days_of_week) == [
-      {7, "Sunday"},
-      {1, "Monday"},
-      {2, "Tuesday"},
-      {3, "Wednesday"},
-      {4, "Thursday"},
-      {5, "Friday"},
-      {6, "Saturday"}
+      {7, "Sun"},
+      {1, "Mon"},
+      {2, "Tue"},
+      {3, "Wed"},
+      {4, "Thu"},
+      {5, "Fri"},
+      {6, "Sat"}
     ]
   end
 end
